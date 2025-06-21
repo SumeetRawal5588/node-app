@@ -15,4 +15,5 @@ COPY . .
 EXPOSE 3000
 
 # 6️⃣ Start the app
-CMD ["npm", "start"]
+CMD ["node", "server.js"]
+
