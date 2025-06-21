@@ -1,0 +1,26 @@
+version: "3.8"
+
+services:
+  node-backend:
+    build: .
+    container_name: node-backend
+    ports:
+      - "3000:3000"
+    networks:
+      - app-network
+
+  nginx:
+    image: nginx:latest
+    container_name: nginx-proxy
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - node-backend
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
