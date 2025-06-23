@@ -84,7 +84,7 @@ sudo chown -R jenkins:jenkins /var/lib/jenkins/workspace/Backend-app
 docker-compose logs -f
 ```
 
----
+----
 
 ## 🧑‍💻 Author
 
