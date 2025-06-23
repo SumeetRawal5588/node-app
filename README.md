@@ -80,7 +80,7 @@ Visit the app at: `http://localhost:8080`
 # Docker permission issues
 sudo chown -R jenkins:jenkins /var/lib/jenkins/workspace/Backend-app
 
-# Show container logs
+# Show container logs 
 docker-compose logs -f
 `````````
 
@@ -88,5 +88,5 @@ docker-compose logs -f
 
 ## 🧑‍💻 Author
 
-**Sumeet Rawal**  
+** Sumeet Rawal **  
 🔗 GitHub: [@SumeetRawal5588](https://github.com/SumeetRawal5588)
