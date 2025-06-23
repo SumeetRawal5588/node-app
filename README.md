@@ -82,7 +82,7 @@ sudo chown -R jenkins:jenkins /var/lib/jenkins/workspace/Backend-app
 
 # Show container logs
 docker-compose logs -f
-```
+`````````
 
 ----
 
