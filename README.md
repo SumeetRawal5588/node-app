@@ -42,7 +42,7 @@ node-app/
 - Git & GitHub
 - Ngrok
 
----
+-------
 
 ## ▶️ How to Run Locally
 
