@@ -2,12 +2,17 @@ version: "3.8"
 
 services:
   node-backend:
-    build: .
+    build:
+      context: .
+      dockerfile: dockerfile
     container_name: node-backend
     ports:
       - "3000:3000"
     networks:
       - app-network
+    dns:
+      - 8.8.8.8
+      - 1.1.1.1
 
   nginx:
     image: nginx:latest
